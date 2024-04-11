@@ -1,2 +1,2 @@
 from .money import Money
-from .Product import Product
+from .product import Product
