@@ -1,7 +1,7 @@
-from device import Device
+from .device import Device
 
 
-class Coffee_Maker(Device):
+class CoffeeMaker(Device):
     def __init__(self, name, price, amount_of_coffee):
         super().__init__(name, price)
         self.amount_of_coffee = amount_of_coffee
@@ -11,3 +11,4 @@ class Coffee_Maker(Device):
 Jméno: {self.name}
 Cena: {self.price} Kč
 Průměrné množství kávy na šálek: {self.amount_of_coffee}g"""
+

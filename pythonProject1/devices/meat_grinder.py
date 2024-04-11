@@ -1,6 +1,7 @@
-from device import Device
+from .device import Device
 
-class Meat_Grinder(Device):
+
+class MeatGrinder(Device):
     def __init__(self, name, price, interior):
         super().__init__(name, price)
         self.interior = interior            #šnek nebo nože
@@ -11,5 +12,7 @@ Jméno: {self.name}
 Cena: {self.price} Kč
 Vnitřní mechanismus mletí: {self.interior}"""
 
+
     def grind(self, object):
         print(f"Vrrrrr, položka {object} byla úspěšně rozemleta")
+

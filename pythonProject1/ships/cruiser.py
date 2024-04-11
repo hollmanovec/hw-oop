@@ -1,4 +1,6 @@
-from ship import Ship
+from .ship import Ship
+
+
 class Cruiser(Ship):
     def __init__(self, name, length, width, type):
         super().__init__(name, length, width)

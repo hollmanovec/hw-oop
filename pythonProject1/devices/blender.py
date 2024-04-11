@@ -1,4 +1,4 @@
-from device import Device
+from .device import Device
 class Blender(Device):
     def __init__(self, name, price, volume):
         super().__init__(name, price)
@@ -12,3 +12,4 @@ Maximální objem mixéru: {self.volume}ml"""
 
     def blend(self, object):
         print(f"Mixér {self.name} úspěšně rozmixoval položku {object}")
+

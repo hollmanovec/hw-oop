@@ -1,4 +1,5 @@
-from ship import Ship
+from .ship import Ship
+
 
 class Destroyer(Ship):
     def __init__(self, name, length, width, weapons):
